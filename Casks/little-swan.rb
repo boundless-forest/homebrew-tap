@@ -1,6 +1,6 @@
 cask "little-swan" do
-  version "0.1.0"
-  sha256 "c2b31d34b0e937a805761175ee018cbd293c9edfa73492d82b123a3be300f5c1"
+  version "0.1.1"
+  sha256 "9eab6dca4810b87c9791218b518e2b192ef97b3a84c13a73fc2ad9b43187af76"
 
   url "https://github.com/boundless-forest/little-swan/releases/download/v#{version}/Little-Swan-#{version}.zip"
   name "Little Swan"
