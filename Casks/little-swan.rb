@@ -1,6 +1,6 @@
 cask "little-swan" do
-  version "0.1.1"
-  sha256 "9eab6dca4810b87c9791218b518e2b192ef97b3a84c13a73fc2ad9b43187af76"
+  version "0.1.2"
+  sha256 "9a2bebfad1afece273ab6ca86b85d3f10b9d63a921615c31b8398bc5c14b7cd4"
 
   url "https://github.com/boundless-forest/little-swan/releases/download/v#{version}/Little-Swan-#{version}.zip"
   name "Little Swan"
@@ -13,6 +13,7 @@ cask "little-swan" do
 
   zap trash: [
     "~/Library/Application Support/Little Swan",
+    "~/Library/Preferences/com.bearwang.littleswan.app.plist",
     "~/Library/Preferences/com.bearwang.littleswan.plist",
   ]
 
