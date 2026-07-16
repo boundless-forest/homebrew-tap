@@ -1,0 +1,24 @@
+cask "little-swan" do
+  version "0.1.0"
+  sha256 "c2b31d34b0e937a805761175ee018cbd293c9edfa73492d82b123a3be300f5c1"
+
+  url "https://github.com/boundless-forest/little-swan/releases/download/v#{version}/Little-Swan-#{version}.zip"
+  name "Little Swan"
+  desc "Menu bar app that rewrites text from any language into natural English"
+  homepage "https://github.com/boundless-forest/little-swan"
+
+  depends_on macos: :sonoma
+
+  app "Little Swan.app"
+
+  zap trash: [
+    "~/Library/Application Support/Little Swan",
+    "~/Library/Preferences/com.bearwang.littleswan.plist",
+  ]
+
+  caveats <<~EOS
+    Little Swan is ad-hoc signed and is not notarized by Apple. If macOS blocks
+    the first launch, open System Settings > Privacy & Security and click
+    "Open Anyway", then confirm that you want to open Little Swan.
+  EOS
+end
